@@ -26,6 +26,7 @@
         <fastjson.version>1.2.83</fastjson.version>
         <fastjson2.version>2.0.51</fastjson2.version>
         <knife4j.version>4.4.0</knife4j.version>
+        <aspectjweaver.version>1.9.22.1</aspectjweaver.version>
 
     </properties>
     <dependencies>
@@ -94,6 +95,21 @@
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-core</artifactId>
             <version>10.1.24</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectjweaver.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.5.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
         </dependency>
 
 
