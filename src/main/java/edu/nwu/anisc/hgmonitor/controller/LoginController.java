@@ -12,4 +12,5 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Tag(name = "登录")
 public class LoginController {
+
 }
