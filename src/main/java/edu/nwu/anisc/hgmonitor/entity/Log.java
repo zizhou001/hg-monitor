@@ -1,4 +1,4 @@
-package edu.nwu.anisc.hgmonitor.dao;
+package edu.nwu.anisc.hgmonitor.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -7,17 +7,17 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * @author zizhou
  * @version 1.0.0
  * @date 2024-10-18 15:25
- * @since JDK 17
  */
 @Data
 @TableName(value = "log")
-public class Log {
+public class Log extends BaseEntity implements Serializable {
     @TableId(value = "log_id", type = IdType.ASSIGN_UUID)
     String logId;
 

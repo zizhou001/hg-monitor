@@ -2,17 +2,15 @@ package edu.nwu.anisc.hgmonitor.aop;
 
 import edu.nwu.anisc.hgmonitor.annotation.OperLog;
 import edu.nwu.anisc.hgmonitor.bo.UserInfoBO;
-import edu.nwu.anisc.hgmonitor.dao.Log;
+import edu.nwu.anisc.hgmonitor.entity.Log;
 import edu.nwu.anisc.hgmonitor.mapper.LogMapper;
 import edu.nwu.anisc.hgmonitor.response.ServerResponseEntity;
 import jakarta.servlet.http.HttpServletRequest;
-import org.apache.ibatis.annotations.responseEntity;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;

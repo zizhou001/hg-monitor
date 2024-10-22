@@ -1,6 +1,6 @@
 package edu.nwu.anisc.hgmonitor.mapper;
 
-import edu.nwu.anisc.hgmonitor.dao.Log;
+import edu.nwu.anisc.hgmonitor.entity.Log;
 
 /**
  * @author zizhou
